@@ -1,0 +1,26 @@
+name: social_publishing_instagram_cover
+title: Instagram Reel Cover Correction
+description: Prevent losing a published Instagram Reel when changing its cover by reposting with a cover instead of deleting the original first.
+category: Business
+include_in_prompt: false
+amends:
+  skill: social_publishing
+  reviewed_revision: 60ab6d283492083d4687a666a67fe45893659c840b7c8b31921960ba2f92e3aa
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - 60ab6d283492083d4687a666a67fe45893659c840b7c8b31921960ba2f92e3aa
+  - 4f8731cd79de1d6cb5da9a6788b66fc0e1d4d4263d3a1fccf25e4d220ba58115
+  - sirun_d6bea4036c504e51b440b2162b68d2c8
+  - /opt/muse/skills/social-publishing/SKILL.md
+  - ~/workspace/custom-skills/social_publishing_instagram_cover/SKILL.md
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In 30 days of post-install evidence, no published Instagram Reel is deleted before a replacement with its cover is verified live, and no repeat of the delete-first cover loss appears.
+    window_days: 30
+  needs_review: false
+  rationale: 'The amendment social_publishing_instagram_cover was flagged for review because its base social_publishing moved to revision 60ab6d283492083d4687a666a67fe45893659c840b7c8b31921960ba2f92e3aa. A fresh read of /opt/muse/skills/social-publishing/SKILL.md on 2026-11-13 confirms the base still only says to use the Instagram site to delete a post, with deletion only after the user confirms that exact post; it contains no warning that the website cannot change a Reel cover after publishing, that a website video upload does not publish as a proper Reel, or that a covered replacement must be published and verified first. The amendment therefore still supplies a fix the base lacks and must not be retired. Its instructions are kept unchanged and only reviewed_revision is renewed to the current base revision. No other proposal is made: only 1 learned skill is active so consolidation is not triggered, the Instagram connector doc already documents Reel publishing with a cover and that top-level comments cannot be created, the GitHub connector doc already covers App permission and repository-selection access, the 110 tool failures carry no error detail, and the failed cron runs trace to the lasting video-generation 403 block and an intermittent job with successful runs, with no concrete managed-skill fix in the evidence.'
+  review_after: 2026-12-13T11:45:35.189450+00:00
+  reviewed_at: 2026-11-13T11:45:35.189450+00:00
+  run_id: sirun_7179cfb6f6bf4ebb932cc1d92b22b240
