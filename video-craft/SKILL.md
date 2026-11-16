@@ -94,11 +94,20 @@ story, direction, artwork, animation, narration, local sound and review.
   2026-11-01): `sumi/references/green-valley-playbook.md` — gentle story, character
   movement, supplied voice, synced captions and music. The girl in Green Valley
   stays unnamed.
-- **Standard procedure, every video:** (1) title/poster frame first, voice
-  speaking the title; (2) story untouched in between; (3) subscribe/follow
-  banner last, voice speaking the banner words over light music. Poster and
-  banner are made FRESH per story, never reused. If a platform allows no separate
-  thumbnail, bake a poster frame into the video at a known timestamp.
+- **Standard procedure, every video:** (1) title/poster frame first — the
+  poster is the hook (POSTER HOOK RULE, 2026-11-15, from Kallaway): the most
+  shocking single frame + a 3–5 word bold overlay that IS the contrast, voice
+  speaking the 3-beat lean line (Lean → "but…" → Snapback) with the title inside
+  it, not the title alone; a title-only poster is the weakest hook; (2) story
+  untouched in between; (3) subscribe/follow banner last, voice speaking the
+  banner words over light music. Poster and banner are made FRESH per story,
+  never reused. If a platform allows no separate thumbnail, bake a poster frame
+  into the video at a known timestamp.
+- **Narration direction (2026-11-15):** write and deliver the narration for ONE
+  real listener — a specific person, FaceTime energy, calm, like telling a
+  friend a story, never loud or performative. **Chatterbox runs must be
+  STAGGERED, never parallel:** each generation holds ~3 GB RAM and parallel
+  runs OOM-kill each other on this 6 GB VM — one voice generation at a time.
 - **Joining:** join clips with the concat filter and re-encode, never `-c copy`;
   measure the voice level in every segment.
 - **Narration routing:** ElevenLabs, Voicebox, the user's own recording, or none
@@ -182,6 +191,16 @@ breakdowns.
 - **Still to test:** Sirio / Jeff full rea-video decomposes were NOT run (one 60 s
   decompose took 23 min; full videos OOM this machine). Their visual lessons come
   from frame grids and scene counts instead — recorded honestly in the original.
+- **Five content-growth creators (§13, added 2026-11-15, from the Dua reel):**
+  Varun Mayya (distribution > product; trust through repetition), AniThing /
+  Aninda Chakraborty (story first, gear second; confidence comes from knowing
+  the story), Kane Kallaway (the hook is the 80/20 — 3-beat formula: Context
+  Lean → Scroll-Stop Interjection → Contrarian Snapback; 4-mistake diagnostic:
+  Delay, Confusion, Irrelevance, Disinterest; 6 archetypes picked from the key
+  visual), Mino Lee (one real ideal viewer; calm FaceTime energy; SLC captions
+  — Short, Large, Clear), Tatsuki (sustainability is how you get consistency).
+  The hook agent runs Kallaway's diagnostic + the poster-hook rule from the
+  next productions onward; Viral Daily rotates the hook archetypes.
 
 ## Track 5 — SVG art (sumi-svg)
 

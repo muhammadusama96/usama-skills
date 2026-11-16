@@ -43,3 +43,19 @@ under their original names.
 - Sumi styles' motion clocks and the "smoother image-route" option (up to 24
   actual pose/in-between drawings per animated second) are recommendations, not
   genre restrictions; they require source artwork, not just changing FPS.
+
+## Weekly sync — 2026-11-16
+
+- **sumi synced:** poster-hook rule (2026-11-15, from Kallaway) in
+  `SKILL.md` and in the playbook's step 1; narration direction (one real
+  listener, FaceTime energy) + Chatterbox-stagger rule (never parallel — each
+  run holds ~3 GB RAM, parallel runs OOM-kill each other) in `SKILL.md` §Voice;
+  FilmCraft Part 7 block appended to the playbook; Kallaway hook-check section
+  added to `hooks-endings-sound.md`. The Kaggle account name + notebook URL
+  that the live `SKILL.md` re-added were re-scrubbed (private account ID).
+  The playbook's HISTORICAL banner was kept, wording updated to point at the
+  appended Part 7 block.
+- **ai-creators-lessons synced:** §13 added — five content-growth creators
+  (Varun Mayya, AniThing, Kane Kallaway, Mino Lee, Tatsuki) from the Dua reel
+  deep study. Router Track 4 updated with a §13 summary; Track 1 standard
+  procedure updated with the poster-hook rule and the narration/stagger rules.
