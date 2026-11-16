@@ -1,11 +1,11 @@
 ---
 name: viral-daily
-description: Viral Daily — the playbook for the user's second Instagram account @usamabkr85 (display name "Viral Daily"). Post ONLY viral content from all over the world as original reels, checked every 5 hours: find what's spiking, break down the top competitor reel with rea-video first, then build our own reel in the same format with real footage first, fast cuts, word-by-word captions, AEO/SEO/GEO + hashtags, and post straight away via the browser. Never brand content, never a repost.
+description: Viral Daily — the playbook for the user's second Instagram account @viraldaily.official (display name "Viral Daily"). Post ONLY viral content from all over the world as original reels, checked every 5 hours: find what's spiking, break down the top competitor reel with rea-video first, then build our own reel in the same format with real footage first, fast cuts, word-by-word captions, AEO/SEO/GEO + hashtags, and post straight away via the browser. Never brand content, never a repost.
 ---
 
-# Viral Daily — @usamabkr85
+# Viral Daily — @viraldaily.official
 
-Second Instagram account, SEPARATE from Anime Valley Stories. Never post brand content or brand-schedule videos here. Display name "Viral Daily", bio "Viral videos from all over the world 🌍 New trending reels every day 🔥". Username stays usamabkr85.
+Second Instagram account, SEPARATE from Anime Valley Stories. Never post brand content or brand-schedule videos here. Display name "Viral Daily", bio "Viral videos from all over the world 🌍 New trending reels every day 🔥". Username is viraldaily.official — renamed by the user Sun 2026-11-15 ~19:32 (was @usamabkr85; old name no longer exists).
 
 ## The job
 
@@ -73,6 +73,9 @@ Competitors @pubity (42M) and @goodnews_movement (5.5M) win with REAL moments, f
 - Voice only if it fits; the cloned voice is available, otherwise music
 - On-screen text short. Format that works: payoff/proof in frame one, one fact per shot, zoom-in title, big bold captions, end on an open question so people comment
 - If it feels like a slideshow with a voiceover, remake it
+- **VOICE RULE (the user, 2026-11-15, STANDING, Daily Viral ONLY): same voice in ALL videos** — every reel, short or long, any kind, gets a voiceover in the SAME voice as the 24-hour roundup: `/opt/hatch/bin/tts speak --language en` (voice Helio, avocado_v2:MAI_03), calm male newsreader ~150 words/min. No music-only reels, no cloned voice on this account — the roundup voice is the account's voice. (Brand films keep the Chatterbox cloned voice; this rule is Daily Viral only.) Supersedes the 2026-11-14 voice rule.
+- **NARRATION DIRECTION (the user, 2026-11-15, from Mino Lee + AniThing): one real listener, FaceTime energy.** Write every voiceover for ONE real person (name them in the brief), calm, like telling a friend the story — never loud or performative. Script word-for-word with pauses marked before generating the voice.
+- **HOOK ARCHETYPES — ROTATE (the user, 2026-11-15, from Kallaway):** pick the hook archetype from the key visual and rotate it across reels — Fortune Teller, Experimenter, Teacher, Magician (a layer only, never standalone), Investigator, Contrarian. Never the same archetype two reels in a row. Audit every hook with the 6 slots [Subject] [Action] [Objective] [Contrast] (+[Proof]) (+[Time]) and the 4-mistake check (Delay, Confusion, Irrelevance, Disinterest) before posting; any reel missing Contrast or Objective gets rewritten, not posted.
 
 ## Real footage rule (the user, 2026-11-13)
 
@@ -84,6 +87,14 @@ Real footage first — not just pictures. People engage more with real moments.
 - Generated images only for shots where no real footage exists.
 - NEVER post someone else's whole video or reel as-is — always re-edit short clips into our own reel, never a full repost.
 
+## Reel structure — banner, alternating real/animated, end CTA (the user, 2026-11-14)
+
+Every regular Viral Daily reel follows this order:
+- **Banner first** — opening banner frame (topic/title + Viral Daily identity) before the clips.
+- **After the thumbnail/cover, alternate clips: real video first, then animated (generated), then real, then animated** — never two of the same kind in a row; always start with real footage.
+- **End card last: "Please follow, like, share and comment"** — the final frame of every reel.
+- The Geolyth daily news roundup keeps its own pattern (ends mid-roundup, no outro card) — this rule does not change it unless the user says so.
+
 ## Checks before posting
 
 Light quality check (this account does NOT use the brand's ten-agent + jury gate): video plays cleanly, captions/text correct with no garbled words, facts accurate, nothing misleading. Fix or remake a flawed reel; never post a broken one. INTEREST CHECK: new visual every 3–4 s, motion varies, word-by-word captions, first 2 seconds must hook.
@@ -94,11 +105,16 @@ Light quality check (this account does NOT use the brand's ten-agent + jury gate
 
 Every caption must: (a) open with 1–2 lines directly answering what the video shows and what the trend is (AEO); (b) carry the trend's key words in plain language (SEO); (c) keep the Viral Daily identity — viral videos from all over the world (GEO); (d) end with relevant hashtags — the trend's hashtag + #viral #trending #reels + 2–3 topic tags, max ~8 total. The Anime Valley brand answers do NOT apply here. No answer-first lines or no hashtags = does NOT post.
 
+## AI content label (the user, 2026-11-15)
+
+Instagram auto-applies an "AI content" label to this account's reels — confirmed live on the U19 reel (instagram.com/reel/DfxSp42iZdw) and the Scarf Man reel (instagram.com/p/Dfwjml7CNsO), 2026-11-15. The label dialog says "This content was likely created or modified with AI" and "based on Meta's automated detection signals" — Meta's detection puts it there; nobody switches it on at upload. The trigger is the realistic AI voiceover (Helio TTS) and the AI-generated images. NEVER turn on the "Add AI label" switch manually at upload — leave it OFF. Do NOT strip metadata or hide the AI origin to dodge the label. Per Meta, the label itself does not limit reach or monetization eligibility. The real monetization blockers are (1) followers — 1 follower now; Gifts need 500 (US) / 1,000 (outside US), Subscriptions 10,000, Bonuses invite-only; and (2) format — Meta's Content Monetization Policies do NOT pay for slideshows of still images, static videos or looping videos, so every reel must keep real footage first, a new visual every 3–4 s, varied motion, and never feel like a slideshow. After posting, check the live reel and note in POSTED.md whether the "AI content" label shows.
+
 ## Posting
 
 - Post STRAIGHT AWAY — do not show the user first, do not wait for approval.
-- Route: BROWSER only (the Instagram connector does NOT list this account). Switch to @usamabkr85 in the account switcher and VERIFY the username shown is usamabkr85 BEFORE posting — display name may read "Viral Daily"; the username is what must match. Any other account → STOP, post nothing, report it.
-- If the browser cannot sign in to @usamabkr85, do NOT post to any other account — report the blocker briefly and leave the reel ready for the next run.
+- Route: BROWSER only (the Instagram connector does NOT list this account). Switch to @viraldaily.official in the account switcher and VERIFY the username shown is viraldaily.official BEFORE posting — display name may read "Baker" or "Viral Daily"; the username is what must match. Any other account → STOP, post nothing, report it.
+- If the browser cannot sign in to @viraldaily.official, do NOT post to any other account — report the blocker briefly and leave the reel ready for the next run.
+- FINAL EDITS IN EDITS APP (the user, 2026-11-16, STANDING): final edits for Instagram must be made with Instagram's Edits app. Edits is phone-only — Muse cannot run it here, so the final pass is a phone step. Workflow (auto-post vs hold for the Edits pass) to be confirmed by the user; until then, keep the browser posting route above.
 - After every post, append topic + live Reel link + date/time to `~/workspace/second-instagram/POSTED.md`, and report the live link(s) in chat. Nothing posted → say nothing.
 
 ## What the winners taught us
@@ -125,7 +141,7 @@ Source: her reel https://www.instagram.com/reel/Ddo96lHSoOk/ (downloaded and fra
 5. **Analytics screenshot as proof inside the reel.** She ends with her real Insights screenshot (5,196,039 views, 93.7% non-followers, 2,607,457 accounts reached, +47.2%). When we have a real result to show (a reel's views, a trend's numbers), show the actual screenshot in the reel, not a retyped claim.
 6. **Screen-recorded tutorial format for how-to topics.** When the topic is a how-to or a setting, show the REAL screen, step by step, with a drawn arrow/circle guiding the eye to each tap (Settings → Content preferences → Specific words and phrases). Real UI beats a drawn diagram.
 7. **Keyword lesson — HONEST version.** Her reel claims adding niche keywords in Settings → Content preferences → "Specific words and phrases" trains the algorithm to show your content. That is NOT what the setting does: it HIDES posts containing those words from YOUR OWN feed (her own commenters say so). The real, usable lesson is her on-screen line: "Use Relevant Keywords For Your Content" — put the niche's exact keywords in the caption and hashtags so Instagram can categorise the reel (our AEO/SEO already does this; keep doing it with the trend's real words). ALSO use the setting for its real purpose on our own account: it HIDES posts containing the listed words from OUR OWN feed — so NEVER add our niche's keywords there (that would hide our niche from us and hurt trend-spotting). Use it only to hide words we do not want to see (spam, scam, off-topic words), keeping the feed clean.
-8. **Handle watermark on every frame.** Her @shopwithayushi_ watermark sits on every frame, so re-shares still credit her. Put a small "@usamabkr85 / Viral Daily" mark on our reels (corner, low opacity, never over the action).
+8. **Handle watermark on every frame.** Her @shopwithayushi_ watermark sits on every frame, so re-shares still credit her. Put a small "@viraldaily.official / Viral Daily" mark on our reels (corner, low opacity, never over the action).
 9. **Ultra-short tip reels (~10 s).** Her growth reels are ~10 s: one tip, loopable, high completion. When a topic is a single fact or tip, a ~10 s reel is allowed (the ~30 s cap is a maximum, not a target).
 10. **Near-daily cadence, same template.** She posts almost every day, often the same "Follow and comment '[WORD]'" template with a new word. A repeatable daily template beats reinventing the format each run.
 11. **Crosspost to Facebook.** Her Insights note says Facebook views count in the total because the content was crossposted there. Viral Daily reels are Instagram-only today — crossposting a reel to Facebook (same account's linked Page, when available) is a free extra audience; try it on the strongest reel of the day and watch whether it adds views.
