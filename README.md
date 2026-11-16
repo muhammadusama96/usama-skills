@@ -3,8 +3,9 @@
 A collection of AI skills for making videos, viral reels, SEO, voice and
 social content — free for anyone to use.
 
-This repo holds **5 merged skills**, built 2026-11-14 by merging the 19
-original skills into 5 groups (see `MERGE-NOTE.md` for why and how). Every
+This repo holds **5 merged skills**, built 2026-11-14 by merging 19 original
+skills into 5 groups (see `MERGE-NOTE.md` for why and how). A 20th original
+skill, `viral-prediction`, was added in the weekly sync of 2026-11-16. Every
 original skill is preserved whole inside its merged skill — nothing was
 deleted. Each merged skill has one `SKILL.md` router at its root, a
 `MERGE-NOTES.md` recording every dedup and conflict decision, and a
@@ -29,9 +30,9 @@ Find him at: YouTube https://www.youtube.com/@beyondtahir · Instagram https://w
 | `youtube-agent/` | YouTube writing, research and packaging only — scripts, hooks, titles, SEO, Shorts | youtube-agent, youtube-automation |
 | `beyond-growth/` | Get found + get clicked — website SEO/AEO/GEO + thumbnail/poster design | beyond-seo, beyond-artist |
 | `ai-services/` | AI services with keys/pricing/setup — voice narration routes, local LLM inference, decision models | leanvox, sumi-voicebox, sumi-elevenlabs, colibri, jev |
-| `publish/` | Getting finished work out — social publishing, Viral Daily runbook, book publishing (KDP), story writing | facebook-instagram, social_publishing_instagram_cover, viral-daily, beyond-words, oh-story |
+| `publish/` | Getting finished work out — social publishing, Viral Daily runbook, book publishing (KDP), story writing, free virality prediction | facebook-instagram, social_publishing_instagram_cover, viral-daily, beyond-words, oh-story, viral-prediction |
 
-## Mapping: 19 originals → 5 merged skills
+## Mapping: 20 originals → 5 merged skills
 
 | Original skill | Files | Merged into |
 | --- | --- | --- |
@@ -54,7 +55,21 @@ Find him at: YouTube https://www.youtube.com/@beyondtahir · Instagram https://w
 | viral-daily | 1 | publish |
 | beyond-words | 116 | publish |
 | oh-story | 3 | publish |
-| **Total original skill files** | **725** | |
+| viral-prediction | 2 | publish |
+| **Total original skill files** | **727** | |
+
+## What is not in this repo (excluded on purpose)
+
+- **Generated media:** sumi's sound-library bundled-bank `.wav` files (61
+  files, 219 MB) are generated audio, not skill content — excluded from the
+  repo. The bank's `library.json` / `score.json` metadata files ARE included.
+- **Build artefacts:** `__pycache__/` directories and editor lock files
+  (`.write-lock`) are never synced.
+- **Local tools referenced by skills but not shipped:** the viral-prediction
+  local scorer code (`~/workspace/viral-prediction/scorer/`), the Geolyth
+  pattern file, and the oh-story pre-read files live outside the skill
+  directories. Each skill's `SKILL.md` / `MERGE-NOTES.md` says so where it
+  applies.
 
 ## Attribution and licensing — summary
 
@@ -83,7 +98,11 @@ Find him at: YouTube https://www.youtube.com/@beyondtahir · Instagram https://w
 ## Note on the weekly update job
 
 The weekly skills-repo update job (Mondays 10:00 AST) syncs
-`~/workspace/custom-skills/` → the staging mirror. After this merge it will
-need re-pointing at the new 5-skill layout — **the job was NOT changed as part
-of this merge**. Re-point it separately before its next run (Mon 2026-11-16),
-or it will sync into the old layout.
+`~/workspace/custom-skills/` → this merged staging mirror, then uploads the
+changed files to the GitHub repo via the browser. It was re-pointed at the
+merged 5-skill layout for its first run under the new layout on Mon
+2026-11-16. Each run re-scrubs changed files (no passwords, API keys, tokens,
+emails, phone numbers or private account IDs), preserves the merge's
+adaptations (de-personalised "the user" prose, HISTORICAL banners,
+repo-relative links, dedup pointers), and records the sync in
+`MERGE-NOTE.md` and the affected skills' `MERGE-NOTES.md`.

@@ -91,3 +91,40 @@ to GitHub.
   re-pointing separately (see root README.md).
 - Does NOT re-licence any third-party work. The repo-root MIT covers only
   Usama's own contributions.
+
+## Weekly sync — 2026-11-16 (first run under the merged layout)
+
+- **New skill added: `viral-prediction` (2 files) → `publish/` (Track 6).**
+  Created 2026-11-15 after the merge: free-only virality scorers (PreViral,
+  Virality Predictor, Virality Labs, Virality AI, quso, StoryCut, Otto,
+  Google Trends) plus a local on-machine scorer. Placed in `publish/` because
+  it is a pre-publish check — score the idea before filming, the hook before
+  posting. The local scorer code lives OUTSIDE the skill directory
+  (`~/workspace/viral-prediction/scorer/`) and is NOT shipped; the skill's
+  external free tools are the portable part (noted in `publish/SKILL.md`
+  Track 6 and `publish/MERGE-NOTES.md`). Root README mapping updated:
+  19 → 20 originals, 725 → 727 files.
+- **Synced (live changes since the merge, 2026-11-15/16):**
+  `video-craft/sumi/SKILL.md` (poster-hook rule, narration direction,
+  Chatterbox stagger rule), `video-craft/sumi/references/green-valley-playbook.md`
+  (poster-hook rule in step 1, FilmCraft Part 7 block appended),
+  `video-craft/sumi/references/hooks-endings-sound.md` (Kallaway hook-check
+  section), `video-craft/ai-creators-lessons/SKILL.md` (§13: five
+  content-growth creators — Varun Mayya, AniThing, Kallaway, Mino Lee,
+  Tatsuki), `publish/viral-daily/SKILL.md` (renamed @usamabkr85 →
+  @viraldaily.official; roundup-voice rule, narration direction, hook-archetype
+  rotation, reel-structure section, AI-content-label section, Edits-app rule).
+- **Merge adaptations preserved, not overwritten:** "Usama" → "the user" in
+  synced in-skill prose; the Kaggle account name + notebook URL that the live
+  sumi `SKILL.md` re-added were re-scrubbed; the playbook's HISTORICAL banner
+  was kept (wording updated to point at the appended Part 7 block); the
+  viral-daily merge dedup was kept — the "What the winners taught us" and
+  FilmCraft sections stay pointers to video-craft, only the genuinely new
+  sections were added; repo-relative links kept (`../../video-craft/...`).
+- **Excluded (noted in root README):** sumi bundled-bank `.wav` files
+  (61 files, 219 MB, generated media), `__pycache__/`, `.write-lock`.
+  No other live changes existed: every other diff between the live skills and
+  this tree is a merge-time edit (2026-11-14) in the merged copy, not a live
+  change — those were left untouched.
+- **Stale `SYNC-NOTE.md`:** removed from the live GitHub repo in this run
+  (it described the old 19-skill sync; this note replaces it).
