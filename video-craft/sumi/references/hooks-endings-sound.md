@@ -14,6 +14,15 @@ For Light/Dark, reveal the hook with a motivated brush deposition or a restraine
 
 Plan the topic reveal as a coherent opening mini-scene: story-appropriate imagery/camera, attractive title entrance, a short musical build or intentional quiet, and synchronized material sound. An intense siege may use a low musical accent; a tender story may need a gentle resolving note. Dramatic means emotionally apt, not automatically loud, violent or drum-heavy. Protect the first narration line, retain approved words/runtime, and let the title hold long enough to read.
 
+## Hook check — Kallaway diagnostic (added 2026-11-15, from the Dua reel learnings)
+
+The hook agent runs this on every script before the gate, from the next productions onward (not a redo of already-gated uploads). Full notes: ~/workspace/research_notes/dua-reel-five-creators-learnings.md.
+- **Build it in 3 beats:** Context Lean (topic clear in 1–2 sentences, right viewer leans in) → Scroll-Stop Interjection (one "but / however / yet" sentence that re-routes a belief the viewer already holds) → Contrarian Snapback (one sentence in the OPPOSITE direction of the lean, still on topic).
+- **Fix it with the 4-mistake check — a hook must clear all four:** Delay (topic too late — name it in the first line), Confusion (6th-grade reading level, active voice, one interpretation only), Irrelevance (swap I/me → you/your; frame need-to-have, not nice-to-have), Disinterest (no A-vs-B contrast = no curiosity loop; state both sides explicitly unless the audience is a tight niche that already shares A).
+- **Pick the archetype from the key visual, not the topic:** Fortune Teller (present → future), Experimenter (old method → new, shown live), Teacher (failing at X → how to win), Magician (visual stun — a layer only, never standalone), Investigator (don't know → now you know), Contrarian (opposite of conventional wisdom, stated at once).
+- **Spoken + visual + text + audio must all point at the same thing** (visual → audio → visual in the first 5 seconds; the key visual is load-bearing — if there is no strong key visual, question whether to make the video). Text overlay: 3–5 bold words. Hook sentences staccato, ≤12 words. AI rewrites a human hook for clarity only — it never invents one.
+- **Spend ~80% of scripting effort on the first seconds.** After the hook, rehook through the body (setup, rehook, repeat) and hook again at the end so viewers share.
+
 ## Ending
 
 Show the consequence before the title/end card. Give the final image or line room to register within the approved runtime; let sound decay into the final hold. A considered title, brush mark or neutral seal may finish the composition. A standalone closing title also has at most 3 seconds total visibility, with individually entering words when it has several words. A final spoken moral or ordinary narration caption keeps its required reading time; it is not a title card. Light can use an established pigment accent; Dark keeps its neutral base with purposeful approved dark-red accents; Original retains its own treatment. Do not end by abruptly stopping every layer or add an unrelated call to action.

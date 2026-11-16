@@ -2,8 +2,9 @@
 > the built-in video-generator chained-clip method as the working method. That
 > generator is BLOCKED (lasting 403, country/region) and Kaggle was ABANDONED by
 > the user 2026-11-14. The current default is the **FilmCraft-from-scratch Part 7
-> process** — see the merged skill root `SKILL.md`, Track 1. This file is kept
-> whole as the record of what was proven; do not follow it as the build route.
+> process** — see the merged skill root `SKILL.md`, Track 1, and the Part 7 block
+> appended at the end of this file (2026-11-15). This file is kept
+> whole as the record of what was proven; do not follow the old method as the build route.
 
 # Green Valley Playbook — compiled knowledge for making this kind of video
 
@@ -603,10 +604,7 @@ STANDARD PROCEDURE FOR EVERY VIDEO FROM NOW ON (user decision,
 2026-11-08, after the 30 s test was approved as "perfect"): this
 applies to EVERY video — a Short or a full film, no exceptions.
 Every video has exactly three parts, in this order:
-1. FIRST — a title/poster frame: the story's title as a poster
-   (short text, max 5 words), with the user's cloned voice SPEAKING
-   the title words over light music. This is also the frame the
-   platform can pick as the thumbnail.
+1. FIRST — a title/poster frame: the POSTER HOOK RULE (the user 2026-11-15, from Kallaway) — the poster is the hook, not a title card: the most shocking single frame of the film with a 3–5 word bold overlay that IS the contrast (A vs B), and the user's cloned voice SPEAKING the 3-beat lean line (Lean → "but…" → Snapback) with the title inside it, over light music — not the title alone. A title-only poster is the weakest possible hook. This is also the frame the platform can pick as the thumbnail.
 2. IN BETWEEN — the story itself, untouched: the film or Short
    exactly as made, with its own narration, captions and music.
 3. LAST — the subscribe/follow banner, AFTER the story has
@@ -708,3 +706,57 @@ plus the YouTube link; Instagram caption — "@beyondtahir" plus
 the credit line; Facebook Reel description — "@beyondtahir" plus
 the credit line. Do NOT use @beyondtahirofficial — that handle
 returns not found.
+
+FILMCRAFT-FROM-SCRATCH BUILD PROCESS — DEFAULT FOR EVERY
+SCHEDULED VIDEO (standing, user decision 2026-11-14 ~06:39,
+approved after Part 7: "that is good video"). Every scheduled
+video — main month schedule, Letters daily, Buster & Pip serial,
+Green Valley — is built from scratch in FilmCraft through the
+Part 7 process. Do NOT retry Kaggle (the user said leave it
+2026-11-14) and do NOT retry the blocked built-in video
+generator (lasting 403, country/region restriction).
+
+- DIVIDE THE WORK (standing 2026-11-14 ~01:26): parallel agents
+  at the same time — script, voice, poster/banner, clips,
+  captions, metadata each to its own agent; every gate runs its
+  ten reviewers in parallel, then the jury. Only truly dependent
+  steps stay sequential (assembly needs narration + clips; the
+  gate needs the assembled video). Parallel split saves
+  wall-clock time, NOT tokens.
+- VOICE: Chatterbox cloned voice (the user's own voice, approved),
+  Whisper-checked before use; Roman Urdu for Urdu narration,
+  checked with Whisper --language ur.
+- CAPTIONS: burned into the video, timed to the actual voice;
+  poster + subscribe banner bookends made FRESH per story, never
+  reused.
+- ASSEMBLY: FilmCraft v0.20.1 at ~/workspace/filmcraft/
+  (filmcraft-cli headless). Timeline: poster 0–3 s + story clips
+  + subscribe banner last, captions burned, voice + music mixed,
+  loudness to -14 LUFS. Gotchas (proven): set bitrateMode "crf"
+  + crf 23 (crf alone is IGNORED — default 20 Mbps bloats the
+  file); captions need burnCaptions: true or they stay a separate
+  track; mixed resolutions letterbox, so re-encode clips
+  consistently first. Speed on this VM (~1.5 CPU, no GPU) is
+  ~11 fps render — ffmpeg is ~50x faster for plain joins, so use
+  ffmpeg for a plain join only; use FilmCraft whenever the video
+  needs timeline work (transitions, styled captions, voice/music
+  mix, loudness).
+- GATE: full ten-agent + jury gate on the assembled video before
+  any upload; upload only jury-PASS videos.
+
+BUILD ONE DAY AHEAD (standing, user decision 2026-11-14 ~06:54,
+all scheduled videos, all schedules): build every scheduled
+video AT LEAST ONE DAY BEFORE its upload day — built and gated
+the day before; production jobs run the day before, not the
+morning of upload day. Example: Part 8 uploads Mon 2026-11-16
+19:30, built Sun 2026-11-15. Does NOT apply to Viral Daily
+(5-hour check cycle — a trend cannot be built a day before it
+happens).
+
+UPLOAD ROUTE (standing, user decision 2026-11-14 ~07:01,
+confirmed ~07:18): BROWSER FIRST to upload videos directly,
+connectors as fallback. Browser uploads need NO permission each
+time — standing permission for YouTube, Instagram, Facebook,
+TikTok. Never stop an upload job to ask for permission; upload,
+verify the live post, report the link. Always verify the
+signed-in username before posting; wrong account → stop.
