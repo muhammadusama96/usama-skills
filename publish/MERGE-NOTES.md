@@ -45,3 +45,21 @@ preserved whole under their original names.
   principles are the usable part; the merged SKILL.md says so plainly.
 - **social_publishing_instagram_cover amends a base skill (`social_publishing`)
   that is not in this repo.** Its `skill.yaml` provenance is preserved verbatim.
+
+## Weekly sync — 2026-11-16
+
+- **New original added: `viral-prediction` (2 files) → Track 6.** Free-only
+  virality scorers; placed in `publish/` as a pre-publish check. The local
+  scorer code is NOT shipped (lives outside the skill directory at
+  `~/workspace/viral-prediction/scorer/`); the skill's external free tools are
+  the portable part. Router (`SKILL.md`) and root README mapping updated;
+  publish total 125 → 127 files.
+- **viral-daily synced:** renamed @usamabkr85 → @viraldaily.official
+  (renamed by the user 2026-11-15; old name no longer exists). New standing
+  rules added: same roundup voice in ALL videos, narration direction (one real
+  listener, FaceTime energy), hook-archetype rotation, reel-structure section,
+  AI-content-label section, Edits-app final-pass rule. Router Track 3 updated
+  to the new username.
+- **Merge dedup kept:** the "What the winners taught us" and FilmCraft Part 7
+  sections stay pointers to video-craft — the live file's re-expanded versions
+  were NOT copied back; only the genuinely new sections were added.

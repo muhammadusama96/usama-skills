@@ -1,14 +1,15 @@
 ---
 name: publish
-description: Getting finished work out — social publishing (Facebook / Instagram Graph API and browser routes), the Viral Daily runbook for @usamabkr85, book publishing with KDP, and story writing. Use when publishing, scheduling or posting finished work, or when writing the story itself.
+description: Getting finished work out — social publishing (Facebook / Instagram Graph API and browser routes), the Viral Daily runbook for @viraldaily.official, book publishing with KDP, story writing, and free virality prediction. Use when publishing, scheduling or posting finished work, scoring a video idea or hook before posting, or when writing the story itself.
 ---
 
 # publish
 
 Merged 2026-11-14 from five originals: `facebook-instagram`,
 `social_publishing_instagram_cover`, `viral-daily`, `beyond-words`, `oh-story`.
-Every original file is preserved whole under its own subfolder; this file is
-the router and the shared rules.
+A sixth original, `viral-prediction`, was added in the weekly sync of
+2026-11-16 as Track 6. Every original file is preserved whole under its own
+subfolder; this file is the router and the shared rules.
 
 > **Credit — Beyond Tahir.** The book-publishing track in this skill
 > (`beyond-words/`) is listed as the work of **Beyond Tahir** — @beyondtahir —
@@ -30,12 +31,13 @@ the router and the shared rules.
 | Viral Daily: find, make and post a viral reel | 3 — Viral Daily runbook | `viral-daily/SKILL.md` |
 | Publish a book (KDP) | 4 — Book publishing | `beyond-words/` |
 | Write a short story | 5 — Story writing (oh-story) | `oh-story/SKILL.md` |
+| Score a video idea or hook before posting | 6 — Virality prediction | `viral-prediction/SKILL.md` |
 
 ## Shared rules
 
 - **Jury-PASS only for uploads.** Brand videos upload only after a ten-agent
   gate + jury PASS. Viral Daily reels use their own light check (Track 3) —
-  that exception is scoped to @usamabkr85 only and does not extend to brand
+  that exception is scoped to @viraldaily.official only and does not extend to brand
   work.
 - **YouTube link rule (standing):** every Short's YouTube link is attached on
   Instagram AND on Facebook (YouTube first, then the live Shorts URL in the
@@ -57,7 +59,7 @@ Facebook Pages + Instagram Business accounts (facebook-sdk).
 
 - **Approval is mandatory on this route.** Drafts first, the user approves, then
   publish. Never auto-post via the API. (Contrast Track 3: Viral Daily keeps its
-  own post-straight-away rule for @usamabkr85 ONLY, browser-only. The two rules
+  own post-straight-away rule for @viraldaily.official ONLY, browser-only. The two rules
   are scoped by route, not in conflict.)
 - **Stale version + unqualified claim — noted, not fixed silently.** The skill
   targets Graph API **v18.0**, which is stale — re-verify the current version
@@ -93,17 +95,19 @@ first.
   2026-11-13, review_after 2026-12-13, rationale as written in the file. The base
   skill itself is not in this repo — this amendment stands alone here.
 
-## Track 3 — Viral Daily runbook (@usamabkr85)
+## Track 3 — Viral Daily runbook (@viraldaily.official)
 
 Source: `viral-daily/SKILL.md` (1 file), kept WHOLE as this track's runbook.
 Second Instagram account, SEPARATE from Anime Valley Stories. Never post brand
 content here. Display name "Viral Daily", bio "Viral videos from all over the
-world 🌍 New trending reels every day 🔥". Username stays usamabkr85.
+world 🌍 New trending reels every day 🔥". Username is viraldaily.official —
+renamed by the user Sun 2026-11-15 ~19:32 (was @usamabkr85; old name no longer
+exists).
 
-- **Post straight away — @usamabkr85 ONLY, browser-only.** Do not show the user
+- **Post straight away — @viraldaily.official ONLY, browser-only.** Do not show the user
   first, do not wait for approval. Route: BROWSER only (the Instagram connector
-  does NOT list this account). Switch to @usamabkr85 and VERIFY the username
-  shown is usamabkr85 BEFORE posting. Any other account → STOP. This rule does
+  does NOT list this account). Switch to @viraldaily.official and VERIFY the username
+  shown is viraldaily.official BEFORE posting. Any other account → STOP. This rule does
   NOT extend to the Graph API route (Track 1) or to brand accounts.
 - **Check every 5 hours.** Each run is a CHECK first — post only when something
   new is spiking. Daily minimum: at least ONE reel per day (first run of the day
@@ -134,7 +138,7 @@ world 🌍 New trending reels every day 🔥". Username stays usamabkr85.
 - **Geolyth "Last 24 Hours" roundup — STATUS: COMPLETED as a launch.** Roundup
   #1 went live Sat 2026-11-14 ~08:19 AST (60.8 s) and the full-channel watch of
   all 14 Geolyth videos is done. The daily job continues: EVERY 24 HOURS, one
-  roundup ~07:00 AST on @usamabkr85, in the Geolyth pattern (one continuous 3D
+  roundup ~07:00 AST on @viraldaily.official, in the Geolyth pattern (one continuous 3D
   globe/map, colour-coded countries, identical intro, 5–8 stories, no outro,
   calm ~150 wpm voiceover, banners/cards only, pop SFX, no music bed).
   FACT-CHECK is compulsory: every fact verified against at least two reputable
@@ -182,6 +186,39 @@ in staging — flag before republishing.
   these with the Anime Valley tone; keep the Green Valley girl unnamed.
 - Also kept: `story-router.md` (routing) and `SCOPE-NOTE.md`.
 
+## Track 6 — Virality prediction (viral-prediction)
+
+Source: `viral-prediction/` (2 files), added in the weekly sync of 2026-11-16.
+Score a video idea or a hook before posting, using ONLY free virality
+prediction tools — never pay for a score, a credit pack, or a trial that asks
+for a card. Free tiers change without warning: re-check the tool's own page
+before relying on any limit.
+
+- **Score the idea before filming** (PreViral, 3 idea scores/month) and the
+  **hook before posting** (Virality Predictor, Virality Labs, Virality AI, quso,
+  StoryCut, Otto — one-time grants and monthly caps in the skill; Google Trends
+  for whether interest is rising or already gone). Cut 2–3 hook takes of the
+  same video, score each, post the best-scoring take with the cleanest Kallaway
+  diagnostic. Never score a whole 5-minute film — every free clip scorer is
+  built for short clips.
+- **A score never skips the gate or the jury.** A high score never skips the
+  ten-agent gate; a low score never kills a video the jury passed. A score is a
+  comparison between your own takes, never a promise of views.
+- **Local scorer (free, on-machine) — NOT shipped in this repo.** The skill
+  describes a local scorer built from the REA breakdown of
+  viralitypredictor.net (ffmpeg + Whisper + OpenCV, no sign-in, no credits,
+  nothing leaves the machine). Its code lives outside the skill directory
+  (`~/workspace/viral-prediction/scorer/`) and is NOT part of this repo — the
+  external free tools above are the portable part. Use the local scorer first
+  when you have it; save the one-time external grants for the biggest uploads.
+- **Privacy:** never upload unreleased footage to a tool that trains on uploads
+  (Higgsfield is excluded for this reason); prefer tools that delete uploads
+  and never train on them. Score the hook clip only, never the full film.
+- **Tools that fail the free-only rule:** Higgsfield Virality Predictor (paid
+  credits now), Opus Clip (score is Starter/Pro only), StreamLadder ClipGPT
+  (7-day trial, no free tier), Vizard (score never appears per clip). Do not pay
+  to unlock any of these.
+
 ## What came from where
 
 | Original skill | Files | Lives at | Role in this merged skill |
@@ -191,4 +228,5 @@ in staging — flag before republishing.
 | viral-daily | 1 | `viral-daily/` | Track 3 — Viral Daily runbook (whole) |
 | beyond-words | 116 | `beyond-words/` | Track 4 — KDP book publishing |
 | oh-story | 3 | `oh-story/` | Track 5 — story writing (appendix; pre-reads absent) |
-| **Total** | **125** | | |
+| viral-prediction | 2 | `viral-prediction/` | Track 6 — free virality prediction (local scorer not shipped) |
+| **Total** | **127** | | |
