@@ -1,6 +1,6 @@
 ---
 name: viral-daily
-description: Viral Daily — the playbook for the user's second Instagram account @viraldaily.official (display name "Viral Daily"). Post ONLY viral content from all over the world as original reels, checked every 5 hours: find what's spiking, break down the top competitor reel with rea-video first, then build our own reel in the same format with real footage first, fast cuts, word-by-word captions, AEO/SEO/GEO + hashtags, and post straight away via the browser. Never brand content, never a repost.
+description: "Viral Daily — the playbook for the user's second Instagram account @viraldaily.official (display name \"Viral Daily\"). Post ONLY viral content from all over the world as original reels, checked every 5 hours: find what's spiking, break down the top competitor reel with rea-video first, then build our own reel in the same format with real footage first, fast cuts, word-by-word captions, AEO/SEO/GEO + hashtags, and post straight away via the browser. Never brand content, never a repost."
 ---
 
 # Viral Daily — @viraldaily.official
