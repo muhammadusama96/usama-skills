@@ -63,3 +63,37 @@ preserved whole under their original names.
 - **Merge dedup kept:** the "What the winners taught us" and FilmCraft Part 7
   sections stay pointers to video-craft — the live file's re-expanded versions
   were NOT copied back; only the genuinely new sections were added.
+
+## Weekly sync — 2026-11-22
+
+- **viral-daily synced (live file 2026-11-18, newer than staging 2026-11-16).**
+  Five genuinely new live sections carried over, de-personalised
+  ("Usama" → "the user"), merge dedup kept:
+  - **Assembly rule (2026-11-18):** never mix video filters and audio
+    loudnorm in one filter_complex (it silently dropped ~3 s of audio
+    packets); encode video-only first, loudnorm separately, mux with
+    `-c copy`; always run the audio packet-gap check. Inserted as run
+    step 3 — this also fixes the live file's duplicate numbering (it had
+    two step 3s); REA-FIRST and later steps renumbered 4–7.
+  - **GTA focus — two news in one video (2026-11-18 evening):** every
+    regular reel gathers TWO viral news — one GTA 6, one other viral news;
+    caption covers both; roundup keeps one GTA 6 story among its 5–8.
+  - **More original content (2026-11-18 evening):** after the "Unoriginal
+    content — In review" flag — every reel clearly transformed original
+    content; others' clips max 5 s, speed-changed, surrounded by our own
+    material.
+  - **Reel structure corrected (2026-11-17):** open on a REAL video clip —
+    never the banner, never an AI image. The banner is the cover/thumbnail
+    frame only. Replaces staging's "Banner first" version (which predated
+    the correction).
+  - **Replying to comments + cross-replies (2026-11-18):** reply to EVERY
+    new comment; cross-reply from this account on new @animevalleystories
+    reels.
+- **Merge dedup kept again:** the "What the winners taught us" and
+  FilmCraft Part 7 sections stay pointers to video-craft; the Geolyth
+  pattern section keeps staging's condensed/updated wording (the live
+  file's older detailed version was NOT copied back). No other live
+  changes: the rest of the live-vs-staging diff is the Nov 14 merge
+  adaptations. Publish file count unchanged (127 original-skill files).
+- **Note:** the account itself stays paused while @viraldaily.official is
+  disabled — this sync is of the playbook only, not a resume order.
