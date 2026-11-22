@@ -38,10 +38,21 @@ The run steps (account-specific — kept here in full):
 
 1. Read the posted log at `~/workspace/second-instagram/POSTED.md`. Never repeat a topic already posted.
 2. Check what is going VIRAL right now, worldwide: X/Twitter, TikTok, Instagram, YouTube, Google Trends / news. Pick the strongest — spiking fast, lots of engagement, worldwide appeal, still fresh. Verify it is real and current before making anything.
-3. **REA-FIRST RULE:** before making any reel, find the TOP VIRAL REEL on that same trend, get its video file, and break it down with rea-video (`~/.local/bin/rea-video decompose <file> -o ~/workspace/second-instagram/rea-video-out/<topic> --lang en`, after reading `../../video-craft/rea-video/SKILL.md` in this repo). Learn its format: shot count, shot lengths, caption style, music and SFX, pacing, how the hook works. Then build OUR reel in that SAME format with our own images, words and edit — same style and structure, never their footage or audio as-is. If no competitor reel can be fetched, build in the quality-bar format below and note that no rea breakdown was available.
-4. If a NEW strong viral topic appeared since the last check, make an original vertical reel (9:16, max ~30 s) and post it straight away. Several new strong trends → a reel for each. No daily maximum.
-5. Nothing new → post NOTHING. Do not re-cover an old topic, do not force a reel.
-6. **DAILY MINIMUM:** at least ONE reel per day. If the log shows zero posted today, this run MUST post one — the strongest topic of the day, even if not brand-new.
+3. **ASSEMBLY RULE (the user, 2026-11-18, from the GTA 6 contract reel): NEVER mix video filters and audio loudnorm in one filter_complex** — the first assembly silently dropped ~3 s of audio packets (voice lines missing) and it reproduced on re-runs. Always encode video-only first, then loudnorm the audio separately and mux with `-c copy`. Always run the **audio packet-gap check** on the final file — volumedetect means alone do not catch a dropped-packet hole.
+4. **REA-FIRST RULE:** before making any reel, find the TOP VIRAL REEL on that same trend, get its video file, and break it down with rea-video (`~/.local/bin/rea-video decompose <file> -o ~/workspace/second-instagram/rea-video-out/<topic> --lang en`, after reading `../../video-craft/rea-video/SKILL.md` in this repo). Learn its format: shot count, shot lengths, caption style, music and SFX, pacing, how the hook works. Then build OUR reel in that SAME format with our own images, words and edit — same style and structure, never their footage or audio as-is. If no competitor reel can be fetched, build in the quality-bar format below and note that no rea breakdown was available.
+5. If a NEW strong viral topic appeared since the last check, make an original vertical reel (9:16, max ~30 s) and post it straight away. Several new strong trends → a reel for each. No daily maximum.
+6. Nothing new → post NOTHING. Do not re-cover an old topic, do not force a reel.
+7. **DAILY MINIMUM:** at least ONE reel per day. If the log shows zero posted today, this run MUST post one — the strongest topic of the day, even if not brand-new.
+
+## GTA focus — TWO NEWS IN ONE VIDEO (the user, 2026-11-18 evening, voice notes ~19:24 + ~19:35, Whisper-verified — CORRECTS both the 07:59 "GTA 6 in every video" rule and the alternation reading of it)
+
+Focus on whichever GTA is the newest version — right now that is GTA 6 (GTA VI, launching 2026-11-19). If a newer GTA version comes out later, switch to that one.
+
+**TWO-IN-ONE-VIDEO RULE (the user, 2026-11-18 ~19:35):** GTA will be in ALL reels — along with the other viral videos, in that same video. Every regular reel gathers TWO viral news in the same video: one is GTA 6 news, the other is another viral news fetched from social media. Not GTA-only reels, not alternating reels — both items in one reel, every time. The caption covers both stories; the one-word comment prompt ties to the reel (either story). The daily 24-hour roundup keeps one GTA 6 story among its 5–8 stories — it is already a mix, so that rule stands.
+
+## More original content (the user, 2026-11-18 evening — after the "Unoriginal content — In review" flag on the profile)
+
+Instagram flagged the account for unoriginal content (Nov 16–17 reels). Every reel must be clearly transformed original content: our own edit, our own voiceover, our own captions, our own structure — never a lightly re-cut repost. Prefer free stock footage and AI visuals where they fit; when using clips of a real moment, keep them short (max 5 s), speed-change them, and surround them with our own material. If a reel looks like someone else's video with a voiceover on top, remake it more original before posting.
 
 ## Top channels check (the user, 2026-11-13)
 
@@ -87,11 +98,12 @@ Real footage first — not just pictures. People engage more with real moments.
 - Generated images only for shots where no real footage exists.
 - NEVER post someone else's whole video or reel as-is — always re-edit short clips into our own reel, never a full repost.
 
-## Reel structure — banner, alternating real/animated, end CTA (the user, 2026-11-14)
+## Reel structure — real video first, AI pictures in between, end CTA (the user, 2026-11-17, CORRECTED — open on real video)
 
 Every regular Viral Daily reel follows this order:
-- **Banner first** — opening banner frame (topic/title + Viral Daily identity) before the clips.
-- **After the thumbnail/cover, alternate clips: real video first, then animated (generated), then real, then animated** — never two of the same kind in a row; always start with real footage.
+- **OPEN ON REAL FOOTAGE (the user, 2026-11-17, STANDING — asked before and it was missed): the first visual of the reel is a REAL video clip of the moment — never the banner, never an AI image.** Start the video with a real video.
+- **AI pictures go only IN BETWEEN real clips** — alternate real video, AI picture, real video, AI picture; never two of the same kind in a row.
+- The banner (topic/title + Viral Daily identity) is the COVER/thumbnail frame only — it does not open the video.
 - **End card last: "Please follow, like, share and comment"** — the final frame of every reel.
 - The Geolyth daily news roundup keeps its own pattern (ends mid-roundup, no outro card) — this rule does not change it unless the user says so.
 
@@ -116,6 +128,12 @@ Instagram auto-applies an "AI content" label to this account's reels — confirm
 - If the browser cannot sign in to @viraldaily.official, do NOT post to any other account — report the blocker briefly and leave the reel ready for the next run.
 - FINAL EDITS IN EDITS APP (the user, 2026-11-16, STANDING): final edits for Instagram must be made with Instagram's Edits app. Edits is phone-only — Muse cannot run it here, so the final pass is a phone step. Workflow (auto-post vs hold for the Edits pass) to be confirmed by the user; until then, keep the browser posting route above.
 - After every post, append topic + live Reel link + date/time to `~/workspace/second-instagram/POSTED.md`, and report the live link(s) in chat. Nothing posted → say nothing.
+
+## Replying to comments (the user, 2026-11-18, STANDING)
+
+Reply to EVERY new comment on this account, whether the commenter is the user's own account or someone else's. FULL browser permission — never ask for permission to reply; just do it in the browser (the connector does not list this account). Verify username viraldaily.official before replying; any other account → stop. Style: short and friendly; for one-word CTA comments deliver the promised answer/detail; for GTA 6 comments keep GTA 6 in the reply. Never reply to spam/scams/hate — hide those instead. Never reply twice to the same comment — the recurring check keeps a replied log at `~/workspace/instagram-comments/replied-comments.md`.
+
+**CROSS-REPLIES (the user, 2026-11-18, STANDING):** also comment from this account on new @animevalleystories reels (browser) — one genuine short comment per new brand post, in Viral Daily's friendly voice, never the same text twice in a row. And reply to comments the brand or personal accounts leave here.
 
 ## What the winners taught us
 
