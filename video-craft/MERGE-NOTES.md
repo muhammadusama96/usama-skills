@@ -59,3 +59,24 @@ under their original names.
   (Varun Mayya, AniThing, Kane Kallaway, Mino Lee, Tatsuki) from the Dua reel
   deep study. Router Track 4 updated with a §13 summary; Track 1 standard
   procedure updated with the poster-hook rule and the narration/stagger rules.
+
+## Weekly sync — 2026-11-23
+
+- **New skill added: `zsky_motion` (2 files) → Track 6.** Created live
+  2026-11-18: the working free image-to-video motion route (ZSky, 5-second
+  clips, no credits, no daily cap) for key shots in the anime films, with
+  the "two friends" wording that gets past the people filter, the trim to
+  5.0 seconds (black zsky.ai end card on the last ~1.75 s), hide-from-Explore
+  and 7-day deletion rules. Placed in `video-craft/` because it is motion
+  for films. Copied whole (`SKILL.md`, `skill.yaml`); the editor lock file
+  (`.write-lock`) is never synced. Router updated: front-matter description,
+  intro line, job table, new Track 6 section, "What came from where" table
+  (375 → 377 files). Note: the skill is a managed learned skill inside its
+  30-day measurement window (to 2026-12-18); its `skill.yaml` keeps its
+  internal evidence handles and run ID, as the merged copy already does for
+  `social_publishing_instagram_cover`.
+- **Held back, not published: `beyond-gtaclips`.** A third-party Beyond Tahir
+  skill (GTA 6 clipping, created live 2026-11-19, updated 2026-11-21) — held
+  back from the public repo until Beyond Tahir gives written permission, per
+  the standing flag. It is NOT in this tree and NOT in the weekly diff map;
+  the hold is recorded here so a future run does not sync it by accident.

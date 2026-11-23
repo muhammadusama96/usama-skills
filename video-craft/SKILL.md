@@ -1,13 +1,14 @@
 ---
 name: video-craft
-description: Make story films and reels end to end — Sumi watercolour-anime films (FilmCraft-from-scratch Part 7, current default), fast reel edits in the Herk house style, reverse-engineering any video with rea-video, creator lessons from Nate Herk / Sirio Berati / Jeff Su, and SVG art. Use when building, editing, studying or fixing a video of any kind.
+description: Make story films and reels end to end — Sumi watercolour-anime films (FilmCraft-from-scratch Part 7, current default), fast reel edits in the Herk house style, reverse-engineering any video with rea-video, creator lessons from Nate Herk / Sirio Berati / Jeff Su, SVG art, and ZSky true-motion clips. Use when building, editing, studying or fixing a video of any kind.
 ---
 
 # video-craft
 
 One skill for making videos, merged 2026-11-14 from five originals: `sumi`,
-`herk-edit-kit`, `rea-video`, `ai-creators-lessons`, `sumi-svg`. Every original
-is preserved whole under its own subfolder below; this file is the router and
+`herk-edit-kit`, `rea-video`, `ai-creators-lessons`, `sumi-svg`. A sixth
+original, `zsky_motion`, was added in the weekly sync of 2026-11-23 as
+Track 6. Every original is preserved whole under its own subfolder below; this file is the router and
 the shared rules. When this file and a sub-skill disagree, the scoped rule in
 "Shared rules" below wins — it records the decision made at merge time.
 
@@ -26,6 +27,7 @@ the shared rules. When this file and a sub-skill disagree, the scoped rule in
 | Copy a video's format shot by shot | 3 — Reverse-engineering (rea-video) | `rea-video/SKILL.md` (Chinese originals; read the English summary below) |
 | How the best creators actually work | 4 — Creator lessons | § "Track 4" below + `ai-creators-lessons/SKILL.md` |
 | SVG / vector art for a film | 5 — SVG art (sumi-svg) | `sumi-svg/SKILL.md` |
+| True-motion clip from a still image | 6 — ZSky motion (zsky_motion) | `zsky_motion/SKILL.md` |
 | Title/poster frame or subscribe banner | Track 1 (films) or Track 2 (reels) | Poster + banner are bookends for films; reels open on the hook, no card |
 
 ## Shared rules (apply to every track)
@@ -213,6 +215,36 @@ original artwork in the three Sumi styles.
 - SVG is the user's explicit choice, or a disclosed fallback when image
   generation is unavailable. Do not silently downgrade a painted film.
 
+## Track 6 — ZSky motion clips (zsky_motion)
+
+Source: `zsky_motion/` (2 files), added in the weekly sync of 2026-11-23.
+The working free route for true motion in key shots: image-to-video clips
+from ZSky (https://zsky.ai/), no credits, no daily cap, 5 seconds per clip.
+Use it when a shot needs real movement; stills with Ken Burns motion are
+only for shots where true motion is not needed, and say so plainly.
+
+- **Prompt rules:** repeat the locked character description and the locked
+  watercolour anime style in every prompt; lock relative height when two
+  characters appear together. Never name a girl or a young man or a young
+  woman — the safety filter refuses those prompts or renders scene-only
+  clips; describe two characters together as "two friends". Avoid the word
+  "kneel" (refused in testing); "sit beside" is the untested retry.
+- **Hide, download, trim:** hide every creation from Explore as soon as it
+  appears (creations are visible by default); download promptly — free clips
+  are deleted after 7 days. Trim every clip to 5.0 seconds before assembly:
+  each clip carries a black zsky.ai end card for about the last 1.75 seconds.
+  Confirm the trimmed clip has no end card and no badge inside the picture.
+- **Check before assembly:** sample frames across the whole clip and confirm
+  the motion is real movement, not only a camera pan over a still; compare
+  side by side with the other clips for style and character design. A clip
+  that loses its people or changes face/style is rejected and regenerated.
+  ZSky clips still go through the normal Sumi gate — no skipping the
+  character-consistency and animation-quality checks.
+- **Alternatives:** Google Flow with Veo 3.1 for a small number of key shots
+  when its setup is ready (no watermark, about five short clips a day).
+  Never retry the blocked built-in video generator for a motion shot and
+  never start Kaggle work for one.
+
 ## What came from where
 
 | Original skill | Files | Lives at | Role in this merged skill |
@@ -222,4 +254,5 @@ original artwork in the three Sumi styles.
 | rea-video | 10 | `rea-video/` | Track 3 — reverse-engineering (Chinese originals) |
 | ai-creators-lessons | 1 | `ai-creators-lessons/` | Track 4 — creator lessons (Nate / Sirio / Jeff) |
 | sumi-svg | 8 | `sumi-svg/` | Track 5 — SVG art, three style guides |
-| **Total** | **375** | | |
+| zsky_motion | 2 | `zsky_motion/` | Track 6 — ZSky true-motion clips |
+| **Total** | **377** | | |
