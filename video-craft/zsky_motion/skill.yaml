@@ -1,0 +1,23 @@
+name: zsky_motion
+title: ZSky Motion Clips
+description: Make short true-motion video clips from still images with ZSky for key shots in anime films and reels, and trim and check them before assembly.
+category: Creation
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - 0ecb6ab3-d4ef-4bf4-b627-6fb2a4cb4ac1
+  - ~/workspace/custom-skills/sumi/SKILL.md
+  - ~/workspace/custom-skills/sumi/references/green-valley-playbook.md
+  - ~/workspace/films/green-valley/part4/zsky-1min/Green-Valley-Both-Characters-60s.mp4
+  - ~/workspace/custom-skills/viral-daily/SKILL.md
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In 30 days of post-install evidence, ZSky clips used in production reach assembly trimmed to 5.0 seconds with no end card, hidden from Explore, and with people present where prompted, and no motion shot is attempted again on the blocked built-in generator.
+    window_days: 30
+  needs_review: false
+  rationale: ZSky was tested 2026-11-17 and works as the free unlimited image-to-video route, with a 60.0 second both-characters clip delivered at ~/workspace/films/green-valley/part4/zsky-1min/Green-Valley-Both-Characters-60s.mp4 after two friends wording succeeded where named-person prompts were refused or rendered scene-only, and with every clip carrying a black zsky.ai end card for about the last 1.75 seconds. A fresh read of ~/workspace/custom-skills/sumi/SKILL.md and ~/workspace/custom-skills/sumi/references/green-valley-playbook.md shows neither contains the trim to 5.0 seconds, hide every creation from Explore, two friends wording, kneel refusal, 5 second clip, or 7 day deletion rules, and the playbook section 3 still instructs the built-in chained generation that is now blocked with a lasting 403. A skill search for ZSky and image-to-video motion found no existing skill covering it, and the zsky-1min-followup cron run 0ecb6ab3-d4ef-4bf4-b627-6fb2a4cb4ac1 failed while a W07 download and a W25 retry were still open. Sumi is not managed by this loop, so the codified method is proposed as a new managed skill instead of editing Sumi. The viral-daily skill was checked and already contains the GTA 6 in every video rule, browser permission and cross-replies, so no proposal is made for those.
+  review_after: 2026-12-18T12:06:50.669336+00:00
+  reviewed_at: 2026-11-18T12:06:50.669336+00:00
+  run_id: sirun_9b43c426952a44baa27f2c223fb2beb1
