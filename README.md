@@ -5,7 +5,8 @@ social content — free for anyone to use.
 
 This repo holds **5 merged skills**, built 2026-11-14 by merging 19 original
 skills into 5 groups (see `MERGE-NOTE.md` for why and how). A 20th original
-skill, `viral-prediction`, was added in the weekly sync of 2026-11-16. Every
+skill, `viral-prediction`, was added in the weekly sync of 2026-11-16, and a
+21st, `zsky_motion`, in the weekly sync of 2026-11-23. Every
 original skill is preserved whole inside its merged skill — nothing was
 deleted. Each merged skill has one `SKILL.md` router at its root, a
 `MERGE-NOTES.md` recording every dedup and conflict decision, and a
@@ -26,13 +27,13 @@ Find him at: YouTube https://www.youtube.com/@beyondtahir · Instagram https://w
 
 | Merged skill | One line | Originals inside |
 | --- | --- | --- |
-| `video-craft/` | Make story films and reels end to end — Sumi films, Herk edits, rea-video, creator lessons, SVG art | sumi, herk-edit-kit, rea-video, ai-creators-lessons, sumi-svg |
+| `video-craft/` | Make story films and reels end to end — Sumi films, Herk edits, rea-video, creator lessons, SVG art, ZSky motion clips | sumi, herk-edit-kit, rea-video, ai-creators-lessons, sumi-svg, zsky_motion |
 | `youtube-agent/` | YouTube writing, research and packaging only — scripts, hooks, titles, SEO, Shorts | youtube-agent, youtube-automation |
 | `beyond-growth/` | Get found + get clicked — website SEO/AEO/GEO + thumbnail/poster design | beyond-seo, beyond-artist |
 | `ai-services/` | AI services with keys/pricing/setup — voice narration routes, local LLM inference, decision models | leanvox, sumi-voicebox, sumi-elevenlabs, colibri, jev |
 | `publish/` | Getting finished work out — social publishing, Viral Daily runbook, book publishing (KDP), story writing, free virality prediction | facebook-instagram, social_publishing_instagram_cover, viral-daily, beyond-words, oh-story, viral-prediction |
 
-## Mapping: 20 originals → 5 merged skills
+## Mapping: 21 originals → 5 merged skills
 
 | Original skill | Files | Merged into |
 | --- | --- | --- |
@@ -56,7 +57,8 @@ Find him at: YouTube https://www.youtube.com/@beyondtahir · Instagram https://w
 | beyond-words | 116 | publish |
 | oh-story | 3 | publish |
 | viral-prediction | 2 | publish |
-| **Total original skill files** | **727** | |
+| zsky_motion | 2 | video-craft |
+| **Total original skill files** | **729** | |
 
 ## What is not in this repo (excluded on purpose)
 

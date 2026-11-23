@@ -92,6 +92,37 @@ to GitHub.
 - Does NOT re-licence any third-party work. The repo-root MIT covers only
   Usama's own contributions.
 
+## Weekly sync — 2026-11-23 (second run under the merged layout)
+
+- **New skill added: `zsky_motion` (2 files) → `video-craft/` (Track 6).**
+  Created live 2026-11-18 after ZSky was tested 2026-11-17 as the working
+  free motion route: 5-second image-to-video clips, no credits, no daily
+  cap, with the "two friends" wording that gets past the people filter, trim
+  to 5.0 seconds (black zsky.ai end card on the last ~1.75 s), hide every
+  creation from Explore, free clips deleted after 7 days. Router
+  (`video-craft/SKILL.md`), `video-craft/MERGE-NOTES.md` and root README
+  mapping updated: 20 → 21 originals, 727 → 729 files. The skill is a
+  managed learned skill inside its 30-day measurement window (to
+  2026-12-18); its `skill.yaml` keeps its internal evidence handles and run
+  ID, as the merged copy already does for
+  `social_publishing_instagram_cover`.
+- **Synced (live change since 2026-11-16):**
+  `publish/social_publishing_instagram_cover/skill.yaml` (review metadata
+  renewed 2026-11-21: base revision, rationale, review dates, run ID).
+  Re-scrubbed on copy: no passwords, keys, tokens, emails, phone numbers or
+  private account IDs in either synced file.
+- **Held back, not published: `beyond-gtaclips`.** Third-party Beyond Tahir
+  skill (GTA 6 clipping, created live 2026-11-19, `SKILL.md` updated
+  2026-11-21, 49 files incl. brand assets) — held back from the public repo
+  until Beyond Tahir gives written permission, per the standing flag. NOT in
+  the merged tree, NOT in the weekly diff map. The hold is also recorded in
+  `video-craft/MERGE-NOTES.md` so a future run does not sync it by accident.
+- **Excluded (unchanged):** sumi bundled-bank `.wav` files (61 files,
+  219 MB, generated media), `__pycache__/`, `.write-lock`. No other live
+  changes existed: every other diff between the live skills and this tree is
+  a merge-time edit (2026-11-14) or a 2026-11-16 sync adaptation — left
+  untouched.
+
 ## Weekly sync — 2026-11-16 (first run under the merged layout)
 
 - **New skill added: `viral-prediction` (2 files) → `publish/` (Track 6).**
